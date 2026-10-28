@@ -81,43 +81,44 @@ class PageHome(BuildableTemplateView):
                 "sponsor_packages": SponsorshipPackage.objects.prefetch_related("sponsors"),
                 "tracks": Track.objects.all(),
                 "ticket_offers": settings.TICKET_OFFERS,
-                "phases": (
-                    {
-                        "label": "Phase 01",
-                        "state": "Active",
-                        "when": "15 May 2027",
-                        "title": "CFP submissions close",
-                        "detail": "Final deadline for 30-minute talks, 90-minute workshops, and lightning ideas.",
-                    },
-                    {
-                        "label": "Phase 02",
-                        "state": "Upcoming",
-                        "when": "30 June 2027",
-                        "title": "Schedule announced",
-                        "detail": "Speaker notifications go out and the multitrack agenda is published from the schedule.",
-                    },
-                    {
-                        "label": "Phase 03",
-                        "state": "Day 1",
-                        "when": "14 October 2027",
-                        "title": "Workshops",
-                        "detail": "Hands-on tutorials and community sprints at the Centro Cultural Franco-Moçambicano.",
-                    },
-                    {
-                        "label": "Phase 04",
-                        "state": "Days 2 & 3",
-                        "when": "15–16 October 2027",
-                        "title": "Main conference",
-                        "detail": "Keynotes, breakout talks, and the opening gathering at the Joaquim Chissano Centre.",
-                    },
-                    {
-                        "label": "Phase 05",
-                        "state": "Day 4",
-                        "when": "17 October 2027",
-                        "title": "Open source sprints",
-                        "detail": "A collaboration day for libraries, documentation, and work alongside maintainers.",
-                    },
-                ),
+                # Restore with the commented calendar block in page_home.html.
+                # "phases": (
+                #     {
+                #         "label": "Phase 01",
+                #         "state": "Active",
+                #         "when": "15 May 2027",
+                #         "title": "CFP submissions close",
+                #         "detail": "Final deadline for 30-minute talks, 90-minute workshops, and lightning ideas.",
+                #     },
+                #     {
+                #         "label": "Phase 02",
+                #         "state": "Upcoming",
+                #         "when": "30 June 2027",
+                #         "title": "Schedule announced",
+                #         "detail": "Speaker notifications go out and the multitrack agenda is published from the schedule.",
+                #     },
+                #     {
+                #         "label": "Phase 03",
+                #         "state": "Day 1",
+                #         "when": "14 October 2027",
+                #         "title": "Workshops",
+                #         "detail": "Hands-on tutorials and community sprints at the Centro Cultural Franco-Moçambicano.",
+                #     },
+                #     {
+                #         "label": "Phase 04",
+                #         "state": "Days 2 & 3",
+                #         "when": "15–16 October 2027",
+                #         "title": "Main conference",
+                #         "detail": "Keynotes, breakout talks, and the opening gathering at the Joaquim Chissano Centre.",
+                #     },
+                #     {
+                #         "label": "Phase 05",
+                #         "state": "Day 4",
+                #         "when": "17 October 2027",
+                #         "title": "Open source sprints",
+                #         "detail": "A collaboration day for libraries, documentation, and work alongside maintainers.",
+                #     },
+                # ),
             }
         )
         return context

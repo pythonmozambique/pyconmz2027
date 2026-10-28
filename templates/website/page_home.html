@@ -19,23 +19,22 @@
           with Python across Africa.
         </h1>
         <p class="max-w-2xl text-lg leading-8 text-muted">
-          Join maintainers, African technologists, and local builders in Maputo for four days of Python, open-source sprints, and conversation.
+          Join maintainers, African technologists, and local builders for Python, open-source sprints, and conversation.
         </p>
-        <div class="card flex flex-wrap gap-4 p-4">
-          <div>
+        <div class="flex flex-wrap gap-3">
+          <div class="tba min-w-44 px-4 py-3">
             <p class="font-headline text-xs font-bold uppercase tracking-wider text-muted">Dates</p>
-            <p class="font-headline font-semibold">{{ CONFERENCE_DATES }}</p>
+            <p class="font-headline text-lg font-semibold">{{ CONFERENCE_DATES }}</p>
           </div>
-          <div>
+          <div class="tba min-w-44 px-4 py-3">
             <p class="font-headline text-xs font-bold uppercase tracking-wider text-muted">Venue</p>
-            <p class="font-headline font-semibold">{{ CONFERENCE_VENUE }}</p>
+            <p class="font-headline text-lg font-semibold">{{ CONFERENCE_VENUE }}</p>
           </div>
         </div>
         <div class="flex flex-col gap-3 sm:flex-row">
           <a class="btn btn-teal" href="{% url 'wafer_page' 'call-for-proposals' %}">Submit a talk proposal</a>
           <a class="btn btn-sun" href="#tickets">Register and tickets</a>
         </div>
-        <p class="text-sm text-muted">Early bird prices below run through 15 July 2027.</p>
       </div>
       <div class="lg:col-span-5">
         <div class="step relative mx-auto max-w-md rounded-2xl bg-paper p-8">
@@ -126,7 +125,14 @@
 
 <section class="border-y border-line bg-sand-deep py-16" id="dates">
   <div class="mx-auto max-w-7xl px-5 lg:px-12">
-    <h2 class="font-headline text-3xl font-bold md:text-4xl">Countdown to PyCon MZ 2027</h2>
+    <h2 class="font-headline text-3xl font-bold md:text-4xl">Calendar</h2>
+    <div class="tba mt-8 w-full p-8">
+      <p class="font-headline text-xs font-bold uppercase tracking-wider text-muted">Dates</p>
+      <p class="mt-2 font-headline text-3xl font-bold">{{ CONFERENCE_DATES }}</p>
+      <p class="mt-3 text-muted">The conference days, the call for proposals, and the schedule release will be published here when they are set.</p>
+    </div>
+    {% comment %}
+    Restore with the phases list in website/views.py.
     <ol class="mt-8 grid gap-4 md:grid-cols-2">
       {% for phase in phases %}
         <li class="card p-5">
@@ -137,6 +143,7 @@
         </li>
       {% endfor %}
     </ol>
+    {% endcomment %}
     <div class="mt-10">
       <div class="mb-4 flex items-end justify-between gap-4">
         <h3 class="font-headline text-2xl font-bold">On the schedule</h3>
@@ -164,16 +171,27 @@
 </section>
 
 <section class="bg-sand py-16" id="venue">
-  <div class="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-2 lg:px-12">
-    <div>
-      <h2 class="font-headline text-3xl font-bold md:text-4xl">Maputo</h2>
-      <p class="mt-4 text-lg leading-8 text-muted">The main conference days are at the Centro de Conferências Joaquim Chissano. Workshops and sprints use the Centro Cultural Franco-Moçambicano.</p>
-      <a class="mt-6 inline-block font-headline font-semibold text-teal" href="{% url 'wafer_page' 'location' %}">Venue details</a>
+  <div class="mx-auto max-w-7xl px-5 lg:px-12">
+    <h2 class="font-headline text-3xl font-bold md:text-4xl">Venue</h2>
+    <div class="tba mt-8 w-full p-8">
+      <p class="font-headline text-xs font-bold uppercase tracking-wider text-muted">Venue</p>
+      <p class="mt-2 font-headline text-3xl font-bold">{{ CONFERENCE_VENUE }}</p>
+      <p class="mt-3 text-muted">The hall will be added to this page when the local team confirms it.</p>
+      <a class="mt-4 inline-block font-headline font-semibold text-teal" href="{% url 'wafer_page' 'location' %}">Venue page</a>
     </div>
-    <ul class="space-y-4">
-      <li class="card p-5"><h3 class="font-headline text-xl font-semibold">Centro de Conferências Joaquim Chissano</h3><p class="mt-1 text-sm text-muted">Plenary stage, Avenida Marginal.</p></li>
-      <li class="card p-5"><h3 class="font-headline text-xl font-semibold">Centro Cultural Franco-Moçambicano</h3><p class="mt-1 text-sm text-muted">Workshops and the sprint courtyard.</p></li>
-    </ul>
+    {% comment %}
+    <div class="mt-8 grid gap-8 lg:grid-cols-2">
+      <div>
+        <h2 class="font-headline text-3xl font-bold md:text-4xl">Maputo</h2>
+        <p class="mt-4 text-lg leading-8 text-muted">The main conference days are at the Centro de Conferências Joaquim Chissano. Workshops and sprints use the Centro Cultural Franco-Moçambicano.</p>
+        <a class="mt-6 inline-block font-headline font-semibold text-teal" href="{% url 'wafer_page' 'location' %}">Venue details</a>
+      </div>
+      <ul class="space-y-4">
+        <li class="card p-5"><h3 class="font-headline text-xl font-semibold">Centro de Conferências Joaquim Chissano</h3><p class="mt-1 text-sm text-muted">Plenary stage, Avenida Marginal.</p></li>
+        <li class="card p-5"><h3 class="font-headline text-xl font-semibold">Centro Cultural Franco-Moçambicano</h3><p class="mt-1 text-sm text-muted">Workshops and the sprint courtyard.</p></li>
+      </ul>
+    </div>
+    {% endcomment %}
   </div>
 </section>
 

@@ -8,10 +8,13 @@ from django.utils.translation import gettext_lazy as _
 from wafer.settings import *  # noqa: F403
 
 CONFERENCE_NAME = "PyCon Mozambique 2027"
-CONFERENCE_DATES = "14–17 October 2027"
+# CONFERENCE_DATES = "14–17 October 2027"
+CONFERENCE_DATES = "To be announced"
 CONFERENCE_CITY = "Maputo"
-CONFERENCE_VENUE = "CCFM & Joaquim Chissano Centre, Maputo"
-CFP_DEADLINE = "15 May 2027"
+# CONFERENCE_VENUE = "CCFM & Joaquim Chissano Centre, Maputo"
+CONFERENCE_VENUE = "To be announced"
+# CFP_DEADLINE = "15 May 2027"
+CFP_DEADLINE = "To be announced"
 
 BASE_DIR = Path(__file__).resolve().parent
 

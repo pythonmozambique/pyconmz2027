@@ -3,7 +3,7 @@ name: Call for proposals
 include_in_menu: false
 ---
 
-The call for proposals closes on 15 May 2027.
+The closing date for proposals is to be announced.
 
 You can submit a 30-minute talk, a 90-minute tutorial, or a lightning talk. Keynotes are invited by the programme team.
 

@@ -212,6 +212,12 @@
     outline: none;
   }
 
+  .tba {
+    border: 1.5px dashed var(--color-ink);
+    background: color-mix(in srgb, var(--color-sun) 32%, white);
+    border-radius: 0.75rem;
+  }
+
   .markdown-body {
     max-width: 72ch;
   }
