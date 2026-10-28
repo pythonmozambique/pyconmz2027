@@ -1,0 +1,560 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pyconmz2027\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-28 18:53+0200\n"
+"PO-Revision-Date: 2026-10-28 18:55+0200\n"
+"Last-Translator: PyCon Mozambique\n"
+"Language-Team: Portuguese\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: settings_base.py:12 settings_base.py:15 settings_base.py:17
+msgid "To be announced"
+msgstr "A anunciar"
+
+#: settings_base.py:129 settings_base.py:135
+msgid "English"
+msgstr "Inglês"
+
+#: settings_base.py:130 settings_base.py:136
+msgid "Portuguese"
+msgstr "Português"
+
+#: settings_base.py:164 templates/wafer.pages/page.html:3
+#: templates/wafer.pages/page.html:6
+msgid "About"
+msgstr "Sobre"
+
+#: settings_base.py:168
+msgid "Keynotes"
+msgstr "Palestras principais"
+
+#: settings_base.py:172 templates/partial_footer.html:16
+msgid "Schedule"
+msgstr "Horário"
+
+#: settings_base.py:176 templates/wafer.pages/page.html:3
+#: templates/wafer.pages/page.html:6
+msgid "Call for Proposals"
+msgstr "Chamada de propostas"
+
+#: settings_base.py:180 templates/partial_footer.html:24
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#: settings_base.py:184 templates/partial_footer.html:15
+#: templates/wafer.pages/page.html:3 templates/wafer.pages/page.html:6
+msgid "Location"
+msgstr "Local"
+
+#: settings_base.py:208
+msgid "Academic & Student"
+msgstr "Académico e estudante"
+
+#: settings_base.py:212
+msgid ""
+"For enrolled university students, high school students, and recent graduates "
+"seeking employment."
+msgstr "Para estudantes universitários inscritos, alunos do ensino secundário e recém-licenciados à procura de emprego."
+
+#: settings_base.py:214
+msgid "All 4-day sessions and keynotes"
+msgstr "Todas as sessões dos 4 dias e as palestras principais"
+
+#: settings_base.py:215
+msgid "Official PyCon MZ badge"
+msgstr "Crachá oficial da PyCon MZ"
+
+#: settings_base.py:216
+msgid "Career fair and speed mentoring"
+msgstr "Feira de emprego e mentoria rápida"
+
+#: settings_base.py:220
+msgid "Individual"
+msgstr "Individual"
+
+#: settings_base.py:224
+msgid ""
+"For engineers, freelancers, hobbyists, and community contributors paying out "
+"of pocket."
+msgstr "Para engenheiros, freelancers, entusiastas e quem contribui para a comunidade e paga do próprio bolso."
+
+#: settings_base.py:226
+msgid "Full conference, workshops and sprints"
+msgstr "Conferência completa, workshops e sprints"
+
+#: settings_base.py:227
+msgid "Daily lunch, coffee breaks and mixer"
+msgstr "Almoço diário, pausas para café e encontro"
+
+#: settings_base.py:228
+msgid "Opening reception invite"
+msgstr "Convite para a recepção de abertura"
+
+#: settings_base.py:233
+msgid "Company / Corporate"
+msgstr "Empresa"
+
+#: settings_base.py:237
+msgid ""
+"For staff whose company covers admission. Funds the diversity grant "
+"programme."
+msgstr "Para quem tem a inscrição paga pela empresa. Financia o programa de bolsas de diversidade."
+
+#: settings_base.py:239
+msgid "All-access pass and VAT invoice"
+msgstr "Passe completo e factura com IVA"
+
+#: settings_base.py:240
+msgid "Networking lounge access"
+msgstr "Acesso ao espaço de networking"
+
+#: settings_base.py:241
+msgid "Subsidises 2 full student scholarships"
+msgstr "Subsidia 2 bolsas completas de estudante"
+
+#: templates/partial_footer.html:7 templates/website/page_home.html:26
+#: templates/website/page_home.html:130
+msgid "Dates"
+msgstr "Datas"
+
+#: templates/partial_footer.html:8 templates/website/page_home.html:30
+#: templates/website/page_home.html:176 templates/website/page_home.html:178
+msgid "Venue"
+msgstr "Local"
+
+#: templates/partial_footer.html:12
+msgid "Attend"
+msgstr "Participar"
+
+#: templates/partial_footer.html:14 templates/website/page_home.html:204
+msgid "Passes"
+msgstr "Passes"
+
+#: templates/partial_footer.html:20
+msgid "Take part"
+msgstr "Colaborar"
+
+#: templates/partial_footer.html:22
+msgid "Call for proposals"
+msgstr "Chamada de propostas"
+
+#: templates/partial_footer.html:23 templates/website/page_home.html:57
+msgid "Speakers"
+msgstr "Oradores"
+
+#: templates/partial_footer.html:25 templates/wafer.pages/page.html:3
+#: templates/wafer.pages/page.html:6
+msgid "Code of conduct"
+msgstr "Código de conduta"
+
+#: templates/partial_footer.html:29
+msgid "Community"
+msgstr "Comunidade"
+
+#: templates/partial_footer.html:37 templates/website/page_home.html:50
+msgid "Python Mozambique community"
+msgstr "Comunidade Python Moçambique"
+
+#: templates/partial_header.html:11
+msgid "Primary"
+msgstr "Principal"
+
+#: templates/partial_header.html:20
+msgid "Tickets"
+msgstr "Bilhetes"
+
+#: templates/partial_header.html:22 templates/partial_header.html:36
+msgid "Account"
+msgstr "Conta"
+
+#: templates/partial_header.html:24 templates/partial_header.html:38
+msgid "Sign in"
+msgstr "Entrar"
+
+#: templates/partial_header.html:27
+msgid "Menu"
+msgstr "Menu"
+
+#: templates/partial_header.html:28
+msgid "Mobile"
+msgstr "Móvel"
+
+#: templates/partial_header.html:40
+msgid "Get Tickets"
+msgstr "Obter bilhetes"
+
+#: templates/wafer.pages/page.html:20
+msgid "Edit"
+msgstr "Editar"
+
+#: templates/wafer.pages/page.html:21
+msgid "Compare to previous version"
+msgstr "Comparar com a versão anterior"
+
+#: templates/website/page_home.html:11
+msgid "The inaugural edition"
+msgstr "A edição inaugural"
+
+#: templates/website/page_home.html:12
+msgid "First Python conference in Mozambique"
+msgstr "A primeira conferência de Python em Moçambique"
+
+#: templates/website/page_home.html:18
+msgid "Empowering innovation"
+msgstr "A impulsionar a inovação"
+
+#: templates/website/page_home.html:19
+msgid "with Python across Africa."
+msgstr "com Python em África."
+
+#: templates/website/page_home.html:22
+msgid ""
+"Join maintainers, African technologists, and local builders for Python, open-"
+"source sprints, and conversation."
+msgstr "Junte-se a maintainers, tecnólogos africanos e a quem constrói localmente, para Python, sprints de código aberto e conversa."
+
+#: templates/website/page_home.html:35
+msgid "Submit a talk proposal"
+msgstr "Enviar uma proposta de palestra"
+
+#: templates/website/page_home.html:36
+msgid "Register and tickets"
+msgstr "Inscrição e bilhetes"
+
+#: templates/website/page_home.html:49
+msgid "PyCon Mozambique emblem"
+msgstr "Emblema da PyCon Mozambique"
+
+#: templates/website/page_home.html:55
+msgid "Full days"
+msgstr "Dias completos"
+
+#: templates/website/page_home.html:55
+msgid "Talks, tutorials and sprints"
+msgstr "Palestras, tutoriais e sprints"
+
+#: templates/website/page_home.html:56
+msgid "Simultaneous tracks"
+msgstr "Trilhas em simultâneo"
+
+#: templates/website/page_home.html:56
+msgid "Core, AI and web"
+msgstr "Core, IA e web"
+
+#: templates/website/page_home.html:57
+msgid "Published as talks are accepted"
+msgstr "Publicados à medida que as palestras são aceites"
+
+#: templates/website/page_home.html:58
+msgid "Attendees"
+msgstr "Participantes"
+
+#: templates/website/page_home.html:58
+msgid "Engineers, students, founders"
+msgstr "Engenheiros, estudantes, fundadores"
+
+#: templates/website/page_home.html:66
+msgid "Our community mission"
+msgstr "A missão da comunidade"
+
+#: templates/website/page_home.html:67
+msgid "A milestone for Mozambican and African tech"
+msgstr "Um marco para a tecnologia moçambicana e africana"
+
+#: templates/website/page_home.html:68
+msgid ""
+"PyCon Mozambique 2027 is a community stage for Lusophone and Pan-African "
+"developers. The programme, the people, and the partners on this site come "
+"from the conference database as the team accepts them."
+msgstr "A PyCon Mozambique 2027 é um palco da comunidade para programadores lusófonos e pan-africanos. O programa, as pessoas e os parceiros neste site vêm da base de dados da conferência, à medida que a equipa os aceita."
+
+#: templates/website/page_home.html:71
+msgid "Youth and university talent"
+msgstr "Talento jovem e universitário"
+
+#: templates/website/page_home.html:71
+msgid ""
+"Subsidised student passes, beginner sessions, and routes into the regional "
+"Python community."
+msgstr "Passes de estudante subsidiados, sessões para principiantes e caminhos para a comunidade Python da região."
+
+#: templates/website/page_home.html:72
+msgid "Lusophone and Pan-African exchange"
+msgstr "Intercâmbio lusófono e pan-africano"
+
+#: templates/website/page_home.html:72
+msgid ""
+"Portuguese and English, linking Mozambique with Angola, Brazil, Portugal, "
+"and the wider PSF ecosystem."
+msgstr "Português e inglês, a ligar Moçambique a Angola, ao Brasil, a Portugal e ao ecossistema mais amplo da PSF."
+
+#: templates/website/page_home.html:73
+msgid "Open source that matters"
+msgstr "Código aberto que importa"
+
+#: templates/website/page_home.html:73
+msgid ""
+"Sprints aimed at upstream Python, public data, and tools people in the "
+"region actually run."
+msgstr "Sprints virados para o Python upstream, dados públicos e ferramentas que as pessoas da região usam de facto."
+
+#: templates/website/page_home.html:82
+msgid "Distinguished voices"
+msgstr "Vozes de referência"
+
+#: templates/website/page_home.html:83
+msgid "Keynote speakers"
+msgstr "Oradores principais"
+
+#: templates/website/page_home.html:84
+msgid ""
+"Accepted keynotes are listed here from the talk database. Nothing is shown "
+"until the programme team accepts it."
+msgstr "As palestras principais aceites aparecem aqui a partir da base de dados. Nada é mostrado até a equipa de programa aceitar."
+
+#: templates/website/page_home.html:86
+msgid "All speakers"
+msgstr "Todos os oradores"
+
+#: templates/website/page_home.html:102
+msgid "Keynotes will appear here"
+msgstr "As palestras principais aparecem aqui"
+
+#: templates/website/page_home.html:103
+msgid ""
+"Add a talk with type Keynote and mark it accepted in the admin. This block "
+"reads those records. It does not keep a stand-in speaker list."
+msgstr "Adicione uma palestra do tipo Keynote e marque-a como aceite na administração. Este bloco lê esses registos. Não guarda uma lista de oradores de exemplo."
+
+#: templates/website/page_home.html:111
+msgid "Conference tracks"
+msgstr "Trilhas da conferência"
+
+#: templates/website/page_home.html:112
+msgid "Tracks are edited in the admin and used when talks are scheduled."
+msgstr "As trilhas editam-se na administração e usam-se quando as palestras entram no horário."
+
+#: templates/website/page_home.html:120
+msgid "Tracks have not been created yet."
+msgstr "Ainda não há trilhas."
+
+#: templates/website/page_home.html:128
+msgid "Calendar"
+msgstr "Calendário"
+
+#: templates/website/page_home.html:132
+msgid ""
+"The conference days, the call for proposals, and the schedule release will "
+"be published here when they are set."
+msgstr "Os dias da conferência, a chamada de propostas e a publicação do horário aparecem aqui quando forem definidos."
+
+#: templates/website/page_home.html:150
+msgid "On the schedule"
+msgstr "No horário"
+
+#: templates/website/page_home.html:151
+msgid "Full schedule"
+msgstr "Horário completo"
+
+#: templates/website/page_home.html:168
+msgid ""
+"Sessions show up here after they are accepted and placed on the schedule."
+msgstr "As sessões aparecem aqui depois de aceites e colocadas no horário."
+
+#: templates/website/page_home.html:180
+msgid "The hall will be added to this page when the local team confirms it."
+msgstr "A sala entra nesta página quando a equipa local a confirmar."
+
+#: templates/website/page_home.html:181
+msgid "Venue page"
+msgstr "Página do local"
+
+#: templates/website/page_home.html:203
+msgid "Attend PyCon MZ 2027"
+msgstr "Participar na PyCon MZ 2027"
+
+#: templates/website/page_home.html:205
+msgid ""
+"Published prices for the inaugural edition. Claim codes and registrations "
+"are issued from the ticket records in the admin."
+msgstr "Preços publicados da edição inaugural. Os códigos e as inscrições saem dos registos de bilhetes na administração."
+
+#: templates/website/page_home.html:220
+msgid "Your registration"
+msgstr "A sua inscrição"
+
+#: templates/website/page_home.html:222
+msgid "Create an account"
+msgstr "Criar uma conta"
+
+#: templates/website/page_home.html:232
+msgid "Sponsors and partners"
+msgstr "Patrocinadores e parceiros"
+
+#: templates/website/page_home.html:233
+msgid ""
+"Tiers are Baobab, Acacia, and Maputo Bay. Logos appear when a sponsor is "
+"attached to a package in the admin."
+msgstr "Os níveis são Baobab, Acacia e Maputo Bay. Os logótipos aparecem quando um patrocinador fica associado a um pacote na administração."
+
+#: templates/website/page_home.html:252
+msgid "No sponsors in this tier yet."
+msgstr "Ainda não há patrocinadores neste nível."
+
+#: templates/website/page_home.html:256
+msgid "Sponsorship packages have not been created yet."
+msgstr "Os pacotes de patrocínio ainda não foram criados."
+
+#: templates/website/page_home.html:259
+msgid "Sponsorship enquiries:"
+msgstr "Pedidos de patrocínio:"
+
+#: templates/website/page_home.html:266
+msgid "Stay with the community"
+msgstr "Fique com a comunidade"
+
+#: templates/website/page_home.html:267
+msgid ""
+"News goes out on the Python Mozambique channels. There is no separate list "
+"to join on this site."
+msgstr "As notícias saem nos canais da Python Moçambique. Não há uma lista à parte para aderir neste site."
+
+#: website/management/commands/seed_conference.py:96
+msgid "Keynote"
+msgstr "Palestra principal"
+
+#: website/management/commands/seed_conference.py:97
+msgid ""
+"Invited plenary talks. Added by the programme team, not the public call."
+msgstr "Palestras plenárias por convite. Adicionadas pela equipa de programa, não pela chamada pública."
+
+#: website/management/commands/seed_conference.py:98
+msgid "Talk"
+msgstr "Palestra"
+
+#: website/management/commands/seed_conference.py:99
+msgid "A 30-minute conference talk with questions."
+msgstr "Uma palestra de 30 minutos, com perguntas."
+
+#: website/management/commands/seed_conference.py:100
+msgid "Tutorial"
+msgstr "Tutorial"
+
+#: website/management/commands/seed_conference.py:101
+msgid "A 90-minute hands-on workshop."
+msgstr "Um workshop prático de 90 minutos."
+
+#: website/management/commands/seed_conference.py:102
+msgid "Lightning"
+msgstr "Relâmpago"
+
+#: website/management/commands/seed_conference.py:103
+msgid "A short lightning talk."
+msgstr "Uma palestra relâmpago curta."
+
+#: website/management/commands/seed_conference.py:104
+msgid "Web Development & APIs"
+msgstr "Desenvolvimento web e APIs"
+
+#: website/management/commands/seed_conference.py:105
+msgid "Async web frameworks, APIs, and real-time systems."
+msgstr "Frameworks web assíncronas, APIs e sistemas em tempo real."
+
+#: website/management/commands/seed_conference.py:106
+msgid "Data Science & AI / ML"
+msgstr "Ciência de dados e IA / ML"
+
+#: website/management/commands/seed_conference.py:107
+msgid "Data analysis, machine learning, and practical modelling."
+msgstr "Análise de dados, aprendizagem automática e modelação prática."
+
+#: website/management/commands/seed_conference.py:108
+msgid "DevOps, Cloud & Reliability"
+msgstr "DevOps, nuvem e fiabilidade"
+
+#: website/management/commands/seed_conference.py:109
+msgid "Shipping, observing, and operating Python in production."
+msgstr "Publicar, observar e operar Python em produção."
+
+#: website/management/commands/seed_conference.py:110
+msgid "Community & Open Source"
+msgstr "Comunidade e código aberto"
+
+#: website/management/commands/seed_conference.py:111
+msgid "Community building, governance, and open-source contribution."
+msgstr "Construção de comunidade, governação e contribuição em código aberto."
+
+#: website/management/commands/seed_conference.py:112
+msgid "Python in Education & IoT"
+msgstr "Python no ensino e IoT"
+
+#: website/management/commands/seed_conference.py:113
+msgid "Teaching Python and building with hardware."
+msgstr "Ensinar Python e construir com hardware."
+
+#: website/management/commands/seed_conference.py:114
+msgid "Baobab (Diamond)"
+msgstr "Baobab (Diamante)"
+
+#: website/management/commands/seed_conference.py:115
+msgid "Lead partnership for the inaugural PyCon Mozambique."
+msgstr "Parceria principal da PyCon Mozambique inaugural."
+
+#: website/management/commands/seed_conference.py:116
+msgid "Acacia (Platinum)"
+msgstr "Acacia (Platina)"
+
+#: website/management/commands/seed_conference.py:117
+msgid "Platinum support for talks, travel, and community grants."
+msgstr "Apoio de platina para palestras, viagens e bolsas da comunidade."
+
+#: website/management/commands/seed_conference.py:118
+msgid "Maputo Bay (Gold)"
+msgstr "Baía de Maputo (Ouro)"
+
+#: website/management/commands/seed_conference.py:119
+msgid "Gold support for local developers and student access."
+msgstr "Apoio de ouro para programadores locais e acesso de estudantes."
+
+msgid "<p>The final schedule has not been published yet.</p>"
+msgstr "<p>O horário final ainda não foi publicado.</p>"
+
+msgid "No sponsors yet."
+msgstr "Ainda não há patrocinadores."
+
+msgid "Log in"
+msgstr "Entrar"
+
+msgid "Sign up"
+msgstr "Criar conta"
+
+msgid "Not registered? Please <a href=\"%(signup_url)s\">sign up</a>."
+msgstr "Ainda não tem conta? <a href=\"%(signup_url)s\">Crie uma</a>."
+
+msgid "Edit schedule"
+msgstr "Editar horário"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Next"
+msgstr "Seguinte"
+
+msgid "Time"
+msgstr "Hora"
+
+msgid "%(talk_type)s Speakers"
+msgstr "Oradores de %(talk_type)s"
+
+msgid "This is a draft that is not visible to the public"
+msgstr "Isto é um rascunho que o público não vê"

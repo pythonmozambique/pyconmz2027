@@ -6,6 +6,7 @@ from django.urls import include, path, re_path
 admin.autodiscover()
 
 urlpatterns = [
+    path("i18n/", include("django.conf.urls.i18n")),
     re_path(r"^accounts/", include("wafer.registration.urls")),
     re_path(r"^users/", include("wafer.users.urls")),
     re_path(r"^talks/", include("wafer.talks.urls")),

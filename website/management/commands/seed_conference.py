@@ -1,6 +1,7 @@
 from decimal import Decimal
 
 from django.core.management.base import BaseCommand
+from django.utils.translation import gettext_lazy as _
 
 from wafer.sponsors.models import SponsorshipPackage
 from wafer.talks.models import TalkType, Track
@@ -87,6 +88,35 @@ TICKET_NAMES = (
     "Academic & Student",
     "Individual",
     "Company / Corporate",
+)
+
+# English text stored in the database. The public site translates these
+# msgids at display time. Keep the stored values in English.
+CATALOGUE_MSGIDS = (
+    _("Keynote"),
+    _("Invited plenary talks. Added by the programme team, not the public call."),
+    _("Talk"),
+    _("A 30-minute conference talk with questions."),
+    _("Tutorial"),
+    _("A 90-minute hands-on workshop."),
+    _("Lightning"),
+    _("A short lightning talk."),
+    _("Web Development & APIs"),
+    _("Async web frameworks, APIs, and real-time systems."),
+    _("Data Science & AI / ML"),
+    _("Data analysis, machine learning, and practical modelling."),
+    _("DevOps, Cloud & Reliability"),
+    _("Shipping, observing, and operating Python in production."),
+    _("Community & Open Source"),
+    _("Community building, governance, and open-source contribution."),
+    _("Python in Education & IoT"),
+    _("Teaching Python and building with hardware."),
+    _("Baobab (Diamond)"),
+    _("Lead partnership for the inaugural PyCon Mozambique."),
+    _("Acacia (Platinum)"),
+    _("Platinum support for talks, travel, and community grants."),
+    _("Maputo Bay (Gold)"),
+    _("Gold support for local developers and student access."),
 )
 
 

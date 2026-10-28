@@ -1,10 +1,20 @@
 {% extends "wafer/base.html" %}
 {% load i18n %}
-{% block title %}{{ page.name }} — {{ WAFER_CONFERENCE_NAME }}{% endblock %}
+{% block title %}{% if page.slug == "about" %}{% trans "About" %}{% elif page.slug == "location" %}{% trans "Location" %}{% elif page.slug == "call-for-proposals" %}{% trans "Call for Proposals" %}{% elif page.slug == "code-of-conduct" %}{% trans "Code of conduct" %}{% else %}{{ page.name }}{% endif %} — {{ WAFER_CONFERENCE_NAME }}{% endblock %}
 {% block content %}
 <article class="markdown-body">
-  <h1>{{ page.name }}</h1>
-  {{ page.cached_render|safe }}
+  <h1>{% if page.slug == "about" %}{% trans "About" %}{% elif page.slug == "location" %}{% trans "Location" %}{% elif page.slug == "call-for-proposals" %}{% trans "Call for Proposals" %}{% elif page.slug == "code-of-conduct" %}{% trans "Code of conduct" %}{% else %}{{ page.name }}{% endif %}</h1>
+  {% if LANGUAGE_CODE == "pt" and page.slug == "about" %}
+    {% include "website/pages/about.html" %}
+  {% elif LANGUAGE_CODE == "pt" and page.slug == "location" %}
+    {% include "website/pages/location.html" %}
+  {% elif LANGUAGE_CODE == "pt" and page.slug == "call-for-proposals" %}
+    {% include "website/pages/call-for-proposals.html" %}
+  {% elif LANGUAGE_CODE == "pt" and page.slug == "code-of-conduct" %}
+    {% include "website/pages/code-of-conduct.html" %}
+  {% else %}
+    {{ page.cached_render|safe }}
+  {% endif %}
   {% if perms.pages.change_page %}
     <p class="mt-8 flex gap-3">
       <a class="btn btn-ghost" href="{{ page.get_absolute_url }}?edit">{% trans "Edit" %}</a>

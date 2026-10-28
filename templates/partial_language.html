@@ -1,0 +1,7 @@
+{% load i18n %}
+<form class="flex items-center gap-1" action="{% url 'set_language' %}" method="post">
+  {% csrf_token %}
+  <input type="hidden" name="next" value="{{ request.get_full_path }}">
+  <button class="btn px-3 py-2 text-sm {% if LANGUAGE_CODE == 'en' %}btn-teal{% else %}btn-ghost{% endif %}" type="submit" name="language" value="en" lang="en" {% if LANGUAGE_CODE == "en" %}aria-current="true"{% endif %}>EN</button>
+  <button class="btn px-3 py-2 text-sm {% if LANGUAGE_CODE == 'pt' %}btn-teal{% else %}btn-ghost{% endif %}" type="submit" name="language" value="pt" lang="pt" {% if LANGUAGE_CODE == "pt" %}aria-current="true"{% endif %}>PT</button>
+</form>

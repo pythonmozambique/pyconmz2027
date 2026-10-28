@@ -9,12 +9,12 @@ from wafer.settings import *  # noqa: F403
 
 CONFERENCE_NAME = "PyCon Mozambique 2027"
 # CONFERENCE_DATES = "14–17 October 2027"
-CONFERENCE_DATES = "To be announced"
+CONFERENCE_DATES = _("To be announced")
 CONFERENCE_CITY = "Maputo"
 # CONFERENCE_VENUE = "CCFM & Joaquim Chissano Centre, Maputo"
-CONFERENCE_VENUE = "To be announced"
+CONFERENCE_VENUE = _("To be announced")
 # CFP_DEADLINE = "15 May 2027"
-CFP_DEADLINE = "To be announced"
+CFP_DEADLINE = _("To be announced")
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -99,8 +99,9 @@ TEMPLATES = [
 ]
 
 MIDDLEWARE = (
-    "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
+    "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
@@ -124,6 +125,11 @@ COTTON_SNAKE_CASED_NAMES = False
 USE_TZ = True
 TIME_ZONE = "Africa/Maputo"
 LANGUAGE_CODE = "en"
+LANGUAGES = [
+    ("en", _("English")),
+    ("pt", _("Portuguese")),
+]
+LOCALE_PATHS = [BASE_DIR / "locale"]
 
 WAFER_TALK_LANGUAGES = (
     ("en", _("English")),
@@ -199,40 +205,40 @@ CONTACT_US_EMAILS = {
 # and do not store a price, so the published offer lives with the site.
 TICKET_OFFERS = (
     {
-        "name": "Academic & Student",
+        "name": _("Academic & Student"),
         "price": "1,500",
         "currency": "MZN",
         "usd": "~$24 USD",
-        "summary": "For enrolled university students, high school students, and recent graduates seeking employment.",
+        "summary": _("For enrolled university students, high school students, and recent graduates seeking employment."),
         "includes": (
-            "All 4-day sessions and keynotes",
-            "Official PyCon MZ badge",
-            "Career fair and speed mentoring",
+            _("All 4-day sessions and keynotes"),
+            _("Official PyCon MZ badge"),
+            _("Career fair and speed mentoring"),
         ),
     },
     {
-        "name": "Individual",
+        "name": _("Individual"),
         "price": "4,500",
         "currency": "MZN",
         "usd": "~$70 USD",
-        "summary": "For engineers, freelancers, hobbyists, and community contributors paying out of pocket.",
+        "summary": _("For engineers, freelancers, hobbyists, and community contributors paying out of pocket."),
         "includes": (
-            "Full conference, workshops and sprints",
-            "Daily lunch, coffee breaks and mixer",
-            "Opening reception invite",
+            _("Full conference, workshops and sprints"),
+            _("Daily lunch, coffee breaks and mixer"),
+            _("Opening reception invite"),
         ),
         "featured": True,
     },
     {
-        "name": "Company / Corporate",
+        "name": _("Company / Corporate"),
         "price": "12,000",
         "currency": "MZN",
         "usd": "~$188 USD",
-        "summary": "For staff whose company covers admission. Funds the diversity grant programme.",
+        "summary": _("For staff whose company covers admission. Funds the diversity grant programme."),
         "includes": (
-            "All-access pass and VAT invoice",
-            "Networking lounge access",
-            "Subsidises 2 full student scholarships",
+            _("All-access pass and VAT invoice"),
+            _("Networking lounge access"),
+            _("Subsidises 2 full student scholarships"),
         ),
     },
 )
