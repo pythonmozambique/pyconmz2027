@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sand: #faf9f5;
+  --color-sand-deep: #f2efe9;
+  --color-paper: #ffffff;
+  --color-ink: #1a1c1b;
+  --color-muted: #3e4947;
+  --color-line: #e2ddd3;
+  --color-teal: #00665e;
+  --color-teal-deep: #004c46;
+  --color-sun: #ffd100;
+  --color-crimson: #d21034;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-headline: "Space Grotesk", system-ui, sans-serif;
+  --radius-card: 1rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-sand);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-headline);
+    letter-spacing: -0.02em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    padding: 0.75rem 1.4rem;
+    border: 1.5px solid var(--color-ink);
+    border-radius: 0.5rem;
+    font-family: var(--font-headline);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    box-shadow: 3px 3px 0 var(--color-ink);
+    transition: transform 120ms ease, box-shadow 120ms ease;
+  }
+
+  .btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--color-ink);
+  }
+
+  .btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0 var(--color-ink);
+  }
+
+  .btn-teal {
+    background: var(--color-teal);
+    color: white;
+  }
+
+  .btn-sun {
+    background: var(--color-sun);
+    color: var(--color-ink);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--color-ink);
+    box-shadow: none;
+  }
+
+  .btn-ghost:hover {
+    background: var(--color-sand-deep);
+    transform: none;
+    box-shadow: none;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-family: var(--font-headline);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .card {
+    background: var(--color-paper);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+  }
+
+  .step {
+    border: 1.5px solid var(--color-ink);
+    box-shadow: 4px 4px 0 var(--color-ink);
+  }
+
+  .geo-grid {
+    background-image: url("../img/geo-grid.svg");
+    background-size: 64px 64px;
+    opacity: 0.14;
+  }
+
+  .nav-link {
+    border-radius: 0.5rem;
+    padding: 0.45rem 0.7rem;
+    font-family: var(--font-headline);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-muted);
+    text-decoration: none;
+  }
+
+  .nav-link:hover,
+  .nav-link[aria-current="page"] {
+    background: var(--color-teal);
+    color: white;
+  }
+
+  .wafer-body h1 {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .wafer-body h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  .wafer-body p,
+  .wafer-body li {
+    line-height: 1.6;
+    color: var(--color-muted);
+  }
+
+  .wafer-body a {
+    color: var(--color-teal-deep);
+  }
+
+  .wafer-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: white;
+  }
+
+  .wafer-body th,
+  .wafer-body td {
+    border: 1px solid var(--color-line);
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .wafer-body .btn,
+  .wafer-body input[type="submit"] {
+    background: var(--color-teal);
+    color: white;
+    border: 1.5px solid var(--color-ink);
+    border-radius: 0.5rem;
+    padding: 0.55rem 1rem;
+    box-shadow: 3px 3px 0 var(--color-ink);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .wafer-body .alert {
+    border: 1px solid var(--color-line);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+    background: var(--color-sand-deep);
+  }
+
+  .wafer-body input[type="text"],
+  .wafer-body input[type="email"],
+  .wafer-body input[type="password"],
+  .wafer-body input[type="url"],
+  .wafer-body textarea,
+  .wafer-body select {
+    width: 100%;
+    min-height: 2.75rem;
+    border: 1.5px solid var(--color-line);
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.75rem;
+    background: white;
+  }
+
+  .wafer-body input:focus,
+  .wafer-body textarea:focus,
+  .wafer-body select:focus {
+    border-color: var(--color-teal);
+    outline: none;
+  }
+
+  .markdown-body {
+    max-width: 72ch;
+  }
+
+  .markdown-body ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+  }
+}

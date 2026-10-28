@@ -1,0 +1,255 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}PyCon Mozambique 2027{% endblock %}
+
+{% block main %}
+<section class="relative overflow-hidden border-b border-line bg-sand-deep pb-16 pt-8 md:pt-12">
+  <div class="geo-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
+  <div class="relative mx-auto max-w-7xl px-5 lg:px-12">
+    <div class="mb-6 flex flex-wrap items-center gap-3">
+      <span class="chip bg-teal text-white">The inaugural edition</span>
+      <span class="font-headline text-xs font-bold uppercase tracking-wider text-crimson">First Python conference in Mozambique</span>
+    </div>
+    <div class="grid items-center gap-12 lg:grid-cols-12">
+      <div class="space-y-6 lg:col-span-7">
+        <h1 class="font-headline text-4xl font-bold leading-tight tracking-tight text-ink md:text-6xl">
+          PyCon Mozambique <span class="text-teal">2027</span>:
+          <span class="bg-sun/60 box-decoration-clone px-1">Empowering innovation</span>
+          with Python across Africa.
+        </h1>
+        <p class="max-w-2xl text-lg leading-8 text-muted">
+          Join maintainers, African technologists, and local builders in Maputo for four days of Python, open-source sprints, and conversation.
+        </p>
+        <div class="card flex flex-wrap gap-4 p-4">
+          <div>
+            <p class="font-headline text-xs font-bold uppercase tracking-wider text-muted">Dates</p>
+            <p class="font-headline font-semibold">{{ CONFERENCE_DATES }}</p>
+          </div>
+          <div>
+            <p class="font-headline text-xs font-bold uppercase tracking-wider text-muted">Venue</p>
+            <p class="font-headline font-semibold">{{ CONFERENCE_VENUE }}</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a class="btn btn-teal" href="{% url 'wafer_page' 'call-for-proposals' %}">Submit a talk proposal</a>
+          <a class="btn btn-sun" href="#tickets">Register and tickets</a>
+        </div>
+        <p class="text-sm text-muted">Early bird prices below run through 15 July 2027.</p>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="step relative mx-auto max-w-md rounded-2xl bg-paper p-8">
+          <div class="mb-6 flex items-center justify-between">
+            <span class="flex gap-1.5" aria-hidden="true">
+              <span class="h-3 w-3 rounded-full bg-teal"></span>
+              <span class="h-3 w-3 rounded-full bg-sun"></span>
+              <span class="h-3 w-3 rounded-full bg-crimson"></span>
+            </span>
+            <span class="font-headline text-xs font-bold uppercase tracking-wider text-muted">Maputo · 2027</span>
+          </div>
+          <img class="mx-auto h-56 w-56" src="{% static 'img/emblem.svg' %}" alt="PyCon Mozambique emblem">
+          <p class="mt-4 text-center font-headline text-sm font-semibold">Python Mozambique community</p>
+        </div>
+      </div>
+    </div>
+    <dl class="card mt-12 grid grid-cols-2 gap-6 p-6 md:grid-cols-4">
+      <div><dt class="font-headline text-4xl font-bold text-teal">04</dt><dd class="font-headline font-semibold">Full days</dd><dd class="text-sm text-muted">Talks, tutorials and sprints</dd></div>
+      <div><dt class="font-headline text-4xl font-bold text-sun">03</dt><dd class="font-headline font-semibold">Simultaneous tracks</dd><dd class="text-sm text-muted">Core, AI and web</dd></div>
+      <div><dt class="font-headline text-4xl font-bold text-crimson">35+</dt><dd class="font-headline font-semibold">Speakers</dd><dd class="text-sm text-muted">Published as talks are accepted</dd></div>
+      <div><dt class="font-headline text-4xl font-bold text-teal-deep">500+</dt><dd class="font-headline font-semibold">Attendees</dd><dd class="text-sm text-muted">Engineers, students, founders</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="bg-sand py-16" id="about">
+  <div class="mx-auto grid max-w-7xl items-start gap-10 px-5 lg:grid-cols-2 lg:px-12">
+    <div>
+      <p class="chip bg-sand-deep text-teal">Our community mission</p>
+      <h2 class="mt-4 font-headline text-3xl font-bold md:text-4xl">A milestone for Mozambican and African tech</h2>
+      <p class="mt-4 text-lg leading-8 text-muted">PyCon Mozambique 2027 is a community stage for Lusophone and Pan-African developers. The programme, the people, and the partners on this site come from the conference database as the team accepts them.</p>
+    </div>
+    <ul class="space-y-4">
+      <li class="card p-4"><h3 class="font-headline text-xl font-semibold">Youth and university talent</h3><p class="mt-1 text-sm text-muted">Subsidised student passes, beginner sessions, and routes into the regional Python community.</p></li>
+      <li class="card p-4"><h3 class="font-headline text-xl font-semibold">Lusophone and Pan-African exchange</h3><p class="mt-1 text-sm text-muted">Portuguese and English, linking Mozambique with Angola, Brazil, Portugal, and the wider PSF ecosystem.</p></li>
+      <li class="card p-4"><h3 class="font-headline text-xl font-semibold">Open source that matters</h3><p class="mt-1 text-sm text-muted">Sprints aimed at upstream Python, public data, and tools people in the region actually run.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="border-y border-line bg-sand-deep py-16" id="keynotes">
+  <div class="mx-auto max-w-7xl px-5 lg:px-12">
+    <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+      <div>
+        <p class="chip bg-paper text-crimson">Distinguished voices</p>
+        <h2 class="mt-3 font-headline text-3xl font-bold md:text-4xl">Keynote speakers</h2>
+        <p class="mt-2 max-w-xl text-muted">Accepted keynotes are listed here from the talk database. Nothing is shown until the programme team accepts it.</p>
+      </div>
+      <a class="font-headline font-semibold text-teal" href="{% url 'wafer_talks_speakers' %}">All speakers</a>
+    </div>
+    {% if keynotes %}
+      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {% for talk in keynotes %}
+          <li class="card flex flex-col p-5">
+            <span class="flex h-16 w-16 items-center justify-center rounded-xl bg-teal font-headline text-xl font-bold text-white" aria-hidden="true">{{ talk.initials }}</span>
+            {% if talk.type %}<p class="chip mt-4 w-fit bg-teal text-white">{{ talk.type }}</p>{% endif %}
+            <h3 class="mt-3 font-headline text-xl font-semibold"><a href="{{ talk.url }}">{{ talk.speakers }}</a></h3>
+            <p class="mt-1 text-sm text-muted">{{ talk.title }}</p>
+            {% if talk.track %}<p class="mt-2 text-xs font-semibold uppercase tracking-wider text-teal">{{ talk.track }}</p>{% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div class="card p-8">
+        <p class="font-headline text-xl font-semibold">Keynotes will appear here</p>
+        <p class="mt-2 max-w-2xl text-muted">Add a talk with type Keynote and mark it accepted in the admin. This block reads those records. It does not keep a stand-in speaker list.</p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="bg-sand py-16" id="tracks">
+  <div class="mx-auto max-w-7xl px-5 lg:px-12">
+    <h2 class="font-headline text-3xl font-bold md:text-4xl">Conference tracks</h2>
+    <p class="mt-2 max-w-2xl text-muted">Tracks are edited in the admin and used when talks are scheduled.</p>
+    <ul class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {% for track in tracks %}
+        <li class="card p-5">
+          <h3 class="font-headline text-xl font-semibold">{{ track.name }}</h3>
+          <p class="mt-2 text-sm text-muted">{{ track.description }}</p>
+        </li>
+      {% empty %}
+        <li class="card p-5 text-muted">Tracks have not been created yet.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="border-y border-line bg-sand-deep py-16" id="dates">
+  <div class="mx-auto max-w-7xl px-5 lg:px-12">
+    <h2 class="font-headline text-3xl font-bold md:text-4xl">Countdown to PyCon MZ 2027</h2>
+    <ol class="mt-8 grid gap-4 md:grid-cols-2">
+      {% for phase in phases %}
+        <li class="card p-5">
+          <p class="font-headline text-xs font-bold uppercase tracking-wider text-teal">{{ phase.label }} · {{ phase.state }}</p>
+          <p class="mt-2 font-headline text-lg font-semibold">{{ phase.when }}</p>
+          <h3 class="font-headline text-xl font-bold">{{ phase.title }}</h3>
+          <p class="mt-1 text-sm text-muted">{{ phase.detail }}</p>
+        </li>
+      {% endfor %}
+    </ol>
+    <div class="mt-10">
+      <div class="mb-4 flex items-end justify-between gap-4">
+        <h3 class="font-headline text-2xl font-bold">On the schedule</h3>
+        <a class="font-headline font-semibold text-teal" href="{% url 'wafer_full_schedule' %}">Full schedule</a>
+      </div>
+      {% if schedule_preview %}
+        <ul class="grid gap-3">
+          {% for item in schedule_preview %}
+            <li class="card flex flex-col gap-1 border-l-4 border-l-teal p-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <a class="font-headline font-semibold" href="{{ item.url }}">{{ item.title }}</a>
+                <p class="text-sm text-muted">{{ item.speakers }}{% if item.venue %} · {{ item.venue }}{% endif %}</p>
+              </div>
+              {% if item.starts_at %}
+                <time class="font-headline text-sm font-semibold" datetime="{{ item.starts_at|date:'c' }}">{{ item.starts_at }}</time>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="card p-5 text-muted">Sessions show up here after they are accepted and placed on the schedule.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand py-16" id="venue">
+  <div class="mx-auto grid max-w-7xl gap-8 px-5 lg:grid-cols-2 lg:px-12">
+    <div>
+      <h2 class="font-headline text-3xl font-bold md:text-4xl">Maputo</h2>
+      <p class="mt-4 text-lg leading-8 text-muted">The main conference days are at the Centro de Conferências Joaquim Chissano. Workshops and sprints use the Centro Cultural Franco-Moçambicano.</p>
+      <a class="mt-6 inline-block font-headline font-semibold text-teal" href="{% url 'wafer_page' 'location' %}">Venue details</a>
+    </div>
+    <ul class="space-y-4">
+      <li class="card p-5"><h3 class="font-headline text-xl font-semibold">Centro de Conferências Joaquim Chissano</h3><p class="mt-1 text-sm text-muted">Plenary stage, Avenida Marginal.</p></li>
+      <li class="card p-5"><h3 class="font-headline text-xl font-semibold">Centro Cultural Franco-Moçambicano</h3><p class="mt-1 text-sm text-muted">Workshops and the sprint courtyard.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="border-y border-line bg-sand-deep py-16" id="tickets">
+  <div class="mx-auto max-w-7xl px-5 lg:px-12">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="chip bg-paper text-teal">Attend PyCon MZ 2027</p>
+      <h2 class="mt-4 font-headline text-3xl font-bold md:text-4xl">Passes</h2>
+      <p class="mt-3 text-muted">Published prices for the inaugural edition. Claim codes and registrations are issued from the ticket records in the admin.</p>
+    </div>
+    <ul class="mt-10 grid gap-4 lg:grid-cols-3">
+      {% for offer in ticket_offers %}
+        <li class="card flex flex-col p-6 {% if offer.featured %}step{% endif %}">
+          <h3 class="font-headline text-xl font-semibold">{{ offer.name }}</h3>
+          <p class="mt-3 font-headline text-4xl font-bold text-teal">{{ offer.price }} <span class="text-base font-semibold text-ink">{{ offer.currency }}</span></p>
+          <p class="text-sm text-muted">{{ offer.usd }}</p>
+          <p class="mt-3 text-sm text-muted">{{ offer.summary }}</p>
+          <ul class="mt-4 flex-1 space-y-2 text-sm">
+            {% for item in offer.includes %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          {% if user.is_authenticated %}
+            <a class="btn btn-teal mt-6" href="{% url 'wafer_user_profile' user.username %}">Your registration</a>
+          {% else %}
+            <a class="btn {% if offer.featured %}btn-sun{% else %}btn-teal{% endif %} mt-6" href="{% url 'registration_register' %}">Create an account</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="bg-sand py-16" id="sponsors">
+  <div class="mx-auto max-w-7xl px-5 lg:px-12">
+    <h2 class="font-headline text-3xl font-bold md:text-4xl">Sponsors and partners</h2>
+    <p class="mt-2 max-w-2xl text-muted">Tiers are Baobab, Acacia, and Maputo Bay. Logos appear when a sponsor is attached to a package in the admin.</p>
+    <div class="mt-8 space-y-8">
+      {% for package in sponsor_packages %}
+        <section class="card p-6">
+          <h3 class="font-headline text-2xl font-semibold">{{ package.name }}</h3>
+          <p class="text-sm text-muted">{{ package.short_description }}</p>
+          {% if package.sponsors.all %}
+            <ul class="mt-4 flex flex-wrap gap-3">
+              {% for sponsor in package.sponsors.all %}
+                <li class="rounded-lg border border-line bg-sand px-4 py-3 font-headline font-semibold">
+                  {% if sponsor.url %}
+                    <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>
+                  {% else %}
+                    <a href="{{ sponsor.get_absolute_url }}">{{ sponsor.name }}</a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p class="mt-4 text-sm text-muted">No sponsors in this tier yet.</p>
+          {% endif %}
+        </section>
+      {% empty %}
+        <p class="card p-5 text-muted">Sponsorship packages have not been created yet.</p>
+      {% endfor %}
+    </div>
+    <p class="mt-8 text-muted">Sponsorship enquiries: <a href="mailto:{{ CONTACT_US_EMAILS.sponsorship }}">{{ CONTACT_US_EMAILS.sponsorship }}</a></p>
+  </div>
+</section>
+
+<section class="bg-teal py-14 text-white">
+  <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-5 md:flex-row md:items-center lg:px-12">
+    <div>
+      <h2 class="font-headline text-3xl font-bold text-white">Stay with the community</h2>
+      <p class="mt-2 max-w-xl text-white/90">News goes out on the Python Mozambique channels. There is no separate list to join on this site.</p>
+    </div>
+    <div class="flex flex-wrap gap-3">
+      <a class="btn btn-sun" href="https://discord.gg/yrmQa8tQ8D">Discord</a>
+      <a class="btn btn-ghost border-white text-white" href="https://chat.whatsapp.com/Lqlzo70Im7B8DzXLWWFKsX">WhatsApp</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

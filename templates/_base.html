@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ WAFER_CONFERENCE_NAME }}{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="{% static 'img/emblem.svg' %}" type="image/svg+xml">
+  <link href="{% static 'vendor/main.css' %}" rel="stylesheet">
+  {% block extra_head %}{% endblock %}
+</head>
+<body class="bg-sand text-ink antialiased">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:px-3 focus:py-2" href="#main">Skip to main content</a>
+  {% block header %}
+    {% include "partial_header.html" %}
+  {% endblock %}
+  <main id="main" class="pt-16 sm:pt-20">
+    {% if messages %}
+      <div class="mx-auto max-w-7xl px-5 pt-4 lg:px-12">
+        {% for message in messages %}
+          <p class="card mb-2 px-4 py-3 text-sm" role="status">{{ message }}</p>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% block main %}
+      <div class="wafer-body mx-auto max-w-7xl px-5 py-12 lg:px-12">
+        {% block content %}{% endblock %}
+      </div>
+    {% endblock %}
+  </main>
+  {% include "partial_footer.html" %}
+  {% if debug %}
+    {% django_browser_reload_script %}
+  {% endif %}
+</body>
+</html>

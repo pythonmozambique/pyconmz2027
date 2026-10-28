@@ -1,0 +1,15 @@
+{% extends "wafer/base.html" %}
+{% load i18n %}
+{% block title %}{{ page.name }} — {{ WAFER_CONFERENCE_NAME }}{% endblock %}
+{% block content %}
+<article class="markdown-body">
+  <h1>{{ page.name }}</h1>
+  {{ page.cached_render|safe }}
+  {% if perms.pages.change_page %}
+    <p class="mt-8 flex gap-3">
+      <a class="btn btn-ghost" href="{{ page.get_absolute_url }}?edit">{% trans "Edit" %}</a>
+      <a class="btn btn-ghost" href="{{ page.get_absolute_url }}?compare">{% trans "Compare to previous version" %}</a>
+    </p>
+  {% endif %}
+</article>
+{% endblock %}
