@@ -2,10 +2,28 @@ import os
 from pathlib import Path
 from urllib.parse import urlparse
 
+import django.utils.translation as translation
 from django.urls import reverse_lazy
-from django.utils.translation import gettext_lazy as _
+from django.utils.functional import lazy
 
-from wafer.settings import *  # noqa: F403
+
+def _gettext_when_ready(message):
+    """Translate only after Django has loaded its applications.
+
+    Vercel stringifies settings before django.setup(). A normal gettext_lazy
+    call at that moment raises AppRegistryNotReady.
+    """
+    from django.apps import apps
+
+    if not apps.ready:
+        return message
+    return translation.gettext(message)
+
+
+translation.gettext_lazy = lazy(_gettext_when_ready, str)
+from django.utils.translation import gettext_lazy as _  # noqa: E402
+
+from wafer.settings import *  # noqa: E402,F403
 
 CONFERENCE_NAME = "PyCon Mozambique 2027"
 # CONFERENCE_DATES = "14–17 October 2027"
