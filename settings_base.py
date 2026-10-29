@@ -37,7 +37,7 @@ CFP_DEADLINE = _("To be announced")
 BASE_DIR = Path(__file__).resolve().parent
 
 ROOT_URLCONF = "urls"
-WSGI_APPLICATION = "wafer.wsgi.application"
+WSGI_APPLICATION = "wsgi.application"
 
 DATABASES["default"]["NAME"] = BASE_DIR / "db.sqlite3"  # noqa: F405
 
