@@ -1,9 +1,12 @@
+import django
+from django.apps import apps
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path, re_path
 
-admin.autodiscover()
+if not apps.ready:
+    django.setup()
 
 urlpatterns = [
     path("i18n/", include("django.conf.urls.i18n")),
