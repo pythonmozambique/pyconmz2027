@@ -224,9 +224,9 @@ CONTACT_US_EMAILS = {
 TICKET_OFFERS = (
     {
         "name": _("Academic & Student"),
-        "price": "1,500",
+        "price": "250",
         "currency": "MZN",
-        "usd": "~$24 USD",
+        "usd": "~$4 USD",
         "summary": _("For enrolled university students, high school students, and recent graduates seeking employment."),
         "includes": (
             _("All 4-day sessions and keynotes"),
@@ -236,9 +236,9 @@ TICKET_OFFERS = (
     },
     {
         "name": _("Individual"),
-        "price": "4,500",
+        "price": "750",
         "currency": "MZN",
-        "usd": "~$70 USD",
+        "usd": "~$12 USD",
         "summary": _("For engineers, freelancers, hobbyists, and community contributors paying out of pocket."),
         "includes": (
             _("Full conference, workshops and sprints"),
@@ -249,9 +249,9 @@ TICKET_OFFERS = (
     },
     {
         "name": _("Company / Corporate"),
-        "price": "12,000",
+        "price": "2,500",
         "currency": "MZN",
-        "usd": "~$188 USD",
+        "usd": "~$40 USD",
         "summary": _("For staff whose company covers admission. Funds the diversity grant programme."),
         "includes": (
             _("All-access pass and VAT invoice"),
