@@ -1,9 +1,24 @@
 {% extends "wafer/base.html" %}
-{% load i18n %}
-{% block title %}{% if page.slug == "about" %}{% trans "About" %}{% elif page.slug == "location" %}{% trans "Location" %}{% elif page.slug == "call-for-proposals" %}{% trans "Call for Proposals" %}{% elif page.slug == "code-of-conduct" %}{% trans "Code of conduct" %}{% else %}{{ page.name }}{% endif %} — {{ WAFER_CONFERENCE_NAME }}{% endblock %}
+{% load i18n translate %}
+{% block title %}{% filter compact %}{% include "partial_page_name.html" %}{% endfilter %} — {{ CONFERENCE_NAME }}{% endblock %}
+{% block og_title %}
+<meta property="og:title" content="{% filter compact %}{% include "partial_page_name.html" %}{% endfilter %} — {{ CONFERENCE_NAME }}">
+{% endblock %}
+{% block description_meta %}
+  {% if page.slug == "about" %}
+    {% trans "PyCon Mozambique 2027 is the first community Python conference in Mozambique." as page_description %}
+  {% elif page.slug == "location" %}
+    {% trans "PyCon Mozambique 2027 is in Maputo. The venue is still to be announced." as page_description %}
+  {% elif page.slug == "call-for-proposals" %}
+    {% trans "Propose a talk or tutorial for PyCon Mozambique 2027." as page_description %}
+  {% elif page.slug == "code-of-conduct" %}
+    {% trans "The code of conduct for everyone at PyCon Mozambique 2027." as page_description %}
+  {% endif %}
+  {% include "partial_description_meta.html" with description=page_description|default:META_DESCRIPTION %}
+{% endblock %}
 {% block content %}
 <article class="markdown-body">
-  <h1>{% if page.slug == "about" %}{% trans "About" %}{% elif page.slug == "location" %}{% trans "Location" %}{% elif page.slug == "call-for-proposals" %}{% trans "Call for Proposals" %}{% elif page.slug == "code-of-conduct" %}{% trans "Code of conduct" %}{% else %}{{ page.name }}{% endif %}</h1>
+  <h1>{% filter compact %}{% include "partial_page_name.html" %}{% endfilter %}</h1>
   {% if LANGUAGE_CODE == "pt" and page.slug == "about" %}
     {% include "website/pages/about.html" %}
   {% elif LANGUAGE_CODE == "pt" and page.slug == "location" %}

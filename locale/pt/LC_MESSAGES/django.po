@@ -558,3 +558,24 @@ msgstr "Oradores de %(talk_type)s"
 
 msgid "This is a draft that is not visible to the public"
 msgstr "Isto é um rascunho que o público não vê"
+
+msgid "The first Python conference in Mozambique, in Maputo in 2027, with talks, sprints, and the local community."
+msgstr "A primeira conferência Python em Moçambique, em Maputo, em 2027, com palestras, sprints e a comunidade local."
+
+msgid "PyCon Mozambique logo"
+msgstr "Logótipo da PyCon Mozambique"
+
+msgid "PyCon Mozambique"
+msgstr "PyCon Mozambique"
+
+msgid "PyCon Mozambique 2027 is the first community Python conference in Mozambique."
+msgstr "A PyCon Mozambique 2027 é a primeira conferência comunitária de Python em Moçambique."
+
+msgid "PyCon Mozambique 2027 is in Maputo. The venue is still to be announced."
+msgstr "A PyCon Mozambique 2027 é em Maputo. O local ainda está por anunciar."
+
+msgid "Propose a talk or tutorial for PyCon Mozambique 2027."
+msgstr "Proponha uma palestra ou um tutorial para a PyCon Mozambique 2027."
+
+msgid "The code of conduct for everyone at PyCon Mozambique 2027."
+msgstr "O código de conduta para toda a gente na PyCon Mozambique 2027."

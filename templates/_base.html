@@ -1,15 +1,30 @@
-{% load static %}
+{% load i18n static %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}{{ WAFER_CONFERENCE_NAME }}{% endblock %}</title>
+  <title>{% block title %}{{ CONFERENCE_NAME }}{% endblock %}</title>
+  {% block og_title %}
+  <meta property="og:title" content="{{ CONFERENCE_NAME }}">
+  {% endblock %}
+  {% block description_meta %}
+    {% include "partial_description_meta.html" with description=META_DESCRIPTION %}
+  {% endblock %}
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ og_image_url }}">
+  <meta property="og:image:alt" content="{% trans "PyCon Mozambique logo" %}">
+  <meta property="og:locale" content="{{ og_locale }}">
+  <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="{% static 'img/emblem.svg' %}" type="image/svg+xml">
+  <link rel="icon" href="{% static 'img/pythonmozambique-logo.svg' %}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{% static 'img/pythonmozambique-logo.png' %}">
   <link href="{% static 'vendor/main.css' %}" rel="stylesheet">
+  <script type="application/ld+json">{{ website_ld_json|safe }}</script>
   {% block extra_head %}{% endblock %}
 </head>
 <body class="flex min-h-screen flex-col bg-sand text-ink antialiased">

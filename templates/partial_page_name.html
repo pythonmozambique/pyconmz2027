@@ -1,0 +1,1 @@
+{% load i18n %}{% if page.slug == "about" %}{% trans "About" %}{% elif page.slug == "location" %}{% trans "Location" %}{% elif page.slug == "call-for-proposals" %}{% trans "Call for Proposals" %}{% elif page.slug == "code-of-conduct" %}{% trans "Code of conduct" %}{% else %}{{ page.name }}{% endif %}

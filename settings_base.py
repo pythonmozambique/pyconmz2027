@@ -26,6 +26,10 @@ from django.utils.translation import gettext_lazy as _  # noqa: E402
 from wafer.settings import *  # noqa: E402,F403
 
 CONFERENCE_NAME = "PyCon Mozambique 2027"
+META_DESCRIPTION = _(
+    "The first Python conference in Mozambique, in Maputo in 2027, with talks, sprints, and the local community."
+)
+CANONICAL_ORIGIN = os.environ.get("CANONICAL_ORIGIN", "").strip().rstrip("/")
 # CONFERENCE_DATES = "14–17 October 2027"
 CONFERENCE_DATES = _("To be announced")
 CONFERENCE_CITY = "Maputo"
